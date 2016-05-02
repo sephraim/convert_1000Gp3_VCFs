@@ -35,7 +35,7 @@ First, you will need to download the original VCF files (25 total), index files 
 
 The following command will download of necessary files:
 
-`wget -A "*.genotypes.vcf.gz*,*.panel" ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/*`
+    wget -A "*.genotypes.vcf.gz*,*.panel" ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/*
 
 You can also run:
 
@@ -71,15 +71,15 @@ The `concat_and_normalize_1KG_VCFs.sh` script will concatenate all output VCFs (
 
 **In order for the normalization and left-alignment to work, you must have the *human\_g1k\_v37.fasta* and *human\_g1k\_v37.fasta.fai* files in the same directory as the script itself.** You can download these two files with the following command:
 
-`wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37.fasta.*`
+    wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37.fasta.*
 
 Then uncompress the FASTA file:
 
-`gunzip human_g1k_v37.fasta.gz`
+    gunzip human_g1k_v37.fasta.gz
 
 Now you can run the following script to concatenate, normalize, and left-align the output:
 
-`./concat_and_normalize_1KG_VCFs.sh`
+    ./concat_and_normalize_1KG_VCFs.sh
 
 **Note:** If for some reason the normalization / left-alignmentment process fails, the non-normalized / non-left-aligned BCF will still remain.
 
