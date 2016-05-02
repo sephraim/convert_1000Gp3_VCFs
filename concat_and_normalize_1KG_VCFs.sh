@@ -32,7 +32,7 @@ bcftools index -fc hg19_1000G_phase3v5a.MORL.bcf.gz
 echo "Done! Index written to hg19_1000G_phase3v5a.MORL.bcf.gz.csi"
 
 echo "Left aligning and normalizing BCF..."
-bcftools norm -m- -f ~/data/references/human_g1k_v37.fa -Ob -o hg19_1000G_phase3v5a.MORL.LA-norm.bcf.gz hg19_1000G_phase3v5a.MORL.bcf.gz
+bcftools norm -m- -f human_g1k_v37.fasta -Ob -o hg19_1000G_phase3v5a.MORL.LA-norm.bcf.gz hg19_1000G_phase3v5a.MORL.bcf.gz
 echo "Done! Output written to hg19_1000G_phase3v5a.MORL.LA-norm.bcf.gz"
 
 echo "Indexing hg19_1000G_phase3v5a.MORL.LA-norm.bcf.gz..."

@@ -16,9 +16,9 @@
 ##
 
 # Set output directory
-#OUTPUT_DIR = '.'
+OUTPUT_DIR = '.'
 #OUTPUT_DIR = "/localscratch/Users/#{ENV['USER']}/hg19_1KG" # Do NOT use trailing slash
-OUTPUT_DIR = "/nfsscratch/Users/#{ENV['USER']}/hg19_1KG" # Do NOT use trailing slash
+#OUTPUT_DIR = "/nfsscratch/Users/#{ENV['USER']}/hg19_1KG" # Do NOT use trailing slash
 
 # Define all valid chromosomes
 ALL_CHRS = [(1..22).map{ |e| e.to_s }, 'MT', 'X', 'Y'].flatten
